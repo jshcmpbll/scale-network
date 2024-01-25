@@ -11,6 +11,12 @@
       extraGroups = [ "wheel" ];
       openssh.authorizedKeys.keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMEiESod7DOT2cmT2QEYjBIrzYqTDnJLld1em3doDROq" ];
     };
+    jcampbell = {
+      isNormalUser = true;
+      uid = 2006;
+      extraGroups = [ "wheel" ];
+      openssh.authorizedKeys.keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINfK7f1WvpQRhhB6UFeTOY5cB5uCzHFgP1DZZMwf75WZ" ];
+    };
   };
 
 }
