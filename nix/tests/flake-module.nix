@@ -4,6 +4,7 @@
   flake.checks.x86_64-linux = withSystem "x86_64-linux" ({ pkgs, ... }: {
     core = pkgs.testers.runNixOSTest (import ./core.nix { inherit inputs; });
     loghost = pkgs.testers.runNixOSTest ./loghost.nix;
+    monitor = pkgs.testers.runNixOSTest (import ./monitor.nix { inherit inputs; });
   });
 
   perSystem = { pkgs, lib, ... }: {
